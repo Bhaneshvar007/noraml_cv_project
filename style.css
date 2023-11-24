@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+main {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#container {
+    width: 90%;
+    font-family: "Roboto", sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 2vw;
+}
+
+#wraper {
+    display: flex;
+    gap: 1vw;
+}
+
+
+.LeftContainer {
+    width: 25%;
+    background-color: #fff;
+    box-shadow: 0 0 10px black;
+}
+
+.ImageArea {
+    padding: .5vw;
+    width: 100%;
+    height: 20vw;
+    background-image: url(./bhanu.jpg);
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ImageArea p {
+    font-size: 2vw;
+    color: aliceblue;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 600ms;
+}
+
+.ImageArea:hover p {
+    opacity: 1;
+}
+
+.itemBox {
+    padding: 1vw;
+    border-bottom: 1px solid gray;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin: .5vw;
+    text-transform: capitalize;
+}
+
+.item img {
+    height: 30px;
+    color: blue;
+}
+
+.item p {
+    font-size: 2vw;
+}
+
+.item h4 {
+    font-weight: 100;
+}
+
+.skillsSection {
+    padding: 1vw;
+    text-transform: capitalize;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.head h2 {
+    font-size: 3vw;
+}
+
+.head img {
+    height: 60px;
+}
+
+.skillsSection p {
+    font-size: 1.3vw;
+    margin-top: .8vw;
+}
+
+.roter {
+    background-color: silver;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.roter span {
+    position: absolute;
+    left: 0;
+    background-color: royalblue;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.roter p {
+    color: #fff;
+}
+
+#sec {
+    width: 80%;
+}
+
+#third {
+    width: 60%;
+}
+
+.LangugeSection {
+    padding: 1vw;
+    text-transform: capitalize;
+}
+
+.LangugeSection .head h2 {
+    font-size: 2vw;
+}
+
+.LangugeSection .head img {
+    height: 40px;
+}
+
+.LangugeSection p {
+    font-size: 1.3vw;
+    margin: .5vw 0;
+    margin-top: 1vw;
+}
+
+#last {
+    width: 25%;
+}
+
+/* right section */
+
+.RightContainer {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+
+}
+
+.rightTop {
+    height: 25%;
+    padding: 2vw;
+    display: flex;
+    box-shadow: 0 0 10px black;
+    flex-direction: column;
+    gap: 3vw;
+    text-transform: capitalize;
+}
+
+#rightHead {
+    display: flex;
+    gap: 2vw;
+}
+
+#rightHead h1 {
+    font-size: 2.5vw;
+    color: #444;
+}
+
+#rightHead img {
+    height: 40px;
+}
+
+.rightTop section h2 {
+    color: #666;
+    margin-bottom: 1vw;
+}
+
+.rightMid {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    box-shadow: 0 0 10px black;
+    padding: 2vw;
+    text-transform: capitalize;
+}
+
+.expCourse {
+    font-size: 2vw;
+}
+
+.date {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    margin: 1vw 0;
+}
+
+.date p {
+    color: royalblue;
+    font-weight: bold;
+}
+
+.date p button {
+    background-color: royalblue;
+    color: #fff;
+    padding: 4px 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-radius: 2px;
+}
+
+.date img {
+    height: 20px;
+}
+
+/* right bottom */
+
+.rightBottom {
+    box-shadow: 0 0 10px black;
+    padding: 2vw;
+    text-transform: capitalize;
+}
+
+.courseBody h2 {
+    color: #444;
+}
+
+.courseBody {
+    margin-top: 2vw;
+}
+
+.courseBody p {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.courseBody p img {
+    height: 20px;
+}
+
+.SecoundDate {
+    color: royalblue;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #27374D;
+    box-shadow: 0px 0px 10px;
+    z-index: 1;
+    /* height: 150px; */
+    width: 100%;
+    text-align: center;
+    padding: 1vw;
+}
+
+footer p {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 2vw;
+}
+
+footer span {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.media img {
+    height: 35px;
+    margin: 1vw;
+    transition: 500ms;
+}
+
+.media img:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+@media (max-width:950px) {
+    #wraper {
+        flex-direction: column;
+    }
+
+    .LeftContainer {
+        width: 100%;
+    }
+
+    .ImageArea {
+        height: 50vh;
+    }
+
+    .ImageArea p {
+        font-size: 10vw;
+    }
+
+    .item {
+        margin: 2vw;
+    }
+
+    .skillsSection {
+        padding: 5vw;
+    }
+
+    .head {
+        gap: 5vw;
+        margin-bottom: 4vw;
+    }
+
+    .head h2 {
+        font-size: 10vw;
+    }
+
+    .roter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 6%;
+    }
+
+    .skillsSection p {
+        font-size: 5vw;
+        margin: 1vw;
+    }
+
+    .LangugeSection {
+        padding: 5vw;
+    }
+
+    .LangugeSection .head h2 {
+        font-size: 7vw;
+    }
+
+    .LangugeSection p {
+        font-size: 5vw;
+    }
+
+    .RightContainer {
+        width: 100%;
+        margin-top: 4vw;
+    }
+
+    .rightTop {
+        padding: 5vw;
+    }
+
+    #rightHead h1 {
+        font-size: 8vw;
+    }
+
+    .rightMid {
+        padding: 5vw;
+    }
+
+    .expCourse {
+        font-size: 5vw;
+        margin-top: 2vw;
+        font-weight: bold;
+        color: black;
+    }
+
+    .rightBottom {
+        padding: 5vw;
+    }
+
+    .courseBody {
+        margin-top: 5vw;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+    }
+
+    footer p{
+        font-size: 6vw;
+        margin-top: 3vw;
+    }
+
+    footer span{
+        font-size: 3.2vw;
+    }
+}
